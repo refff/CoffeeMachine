@@ -88,25 +88,29 @@ class Main {
     static void useOfIngredients(int water, int milk, int beans, int money) {
         boolean isDone = true;
 
-        if (waterAmount >= water) waterAmount -= water;
+        if (waterAmount >= water)
+            waterAmount -= water;
         else {
             outOfIngredient("water");
             isDone = false;
         }
 
-        if (beansAmount >= beans && isDone) beansAmount -= beans;
+        if (beansAmount >= beans && isDone)
+            beansAmount -= beans;
         else {
             outOfIngredient("beans");
             isDone = false;
         }
 
-        if (milkAmount >= milk && isDone) milkAmount -= milk;
+        if (milkAmount >= milk && isDone)
+            milkAmount -= milk;
         else {
             outOfIngredient("milk");
             isDone = false;
         }
 
-        if (disposableCups >= 1 && isDone) disposableCups -= 1;
+        if (disposableCups >= 1 && isDone)
+            disposableCups -= 1;
         else {
             outOfIngredient("cups");
             isDone = false;
